@@ -14,10 +14,13 @@
  *   SEQUENCE
  *   SET letter in chars array at frontPtr to letter in chars array at backPtr
  *   DECREMENT backPtr
+ *   END SEQUENCE
  * END FOR
  * RETURN CALL chars.join() with empty string
+ * END SEQUENCE
  */
 
+// I wanted to solve this without using the Array.prototype.reverse() method
 const reverseString = function (string) {
   if (string === "") return "";
 
